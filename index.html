@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hotel Booking Registration Form</h1>
+        <form id="booking-form">
+            <div class="form-group">
+                <label for="customer-name">Customer Name:</label>
+                <input type="text" id="customer-name" required>
+            </div>
+            <div class="form-group">
+                <label for="check-in-date">Check-in Date:</label>
+                <input type="date" id="check-in-date" required>
+            </div>
+            <div class="form-group">
+                <label for="total-days">Total No of Days:</label>
+                <input type="number" id="total-days" required>
+            </div>
+            <div class="form-group">
+                <label for="total-persons">Total No of Persons:</label>
+                <input type="number" id="total-persons" required>
+            </div>
+            <div class="form-group">
+                <label for="room-type">Room Type:</label>
+                <select id="room-type">
+                    <option value="Delux Room">Delux Room</option>
+                    <option value="Suite Room">Suite Room</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="amenities">Amenities:</label>
+                <select id="amenities" multiple>
+                      <option value="AC">AC</option>
+                    <option value="Locker">Locker</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="advance-amount">Advance Amount:</label>
+                <input type="number" id="advance-amount" required>
+            </div>
+            <div class="form-group">
+                <label>Total Room Cost:</label>
+                <span id="total-room-cost">0/-</span>
+            </div>
+            <div class="form-group">
+                <label>Total Amenities Cost:</label>
+                <span id="total-amenities-cost">0/-</span>
+            </div>
+            <div class="form-group">
+                <label>Total Cost:</label>
+                <span id="total-cost">0/-</span>
+            </div>
+            <div class="form-group">
+                <label>Balance:</label>
+                <span id="balance">0/-</span>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
